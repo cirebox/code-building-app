@@ -16,8 +16,6 @@
 *.dll
 *.so
 *.dylib
-*.lrs
-*.res
 *.compiled
 *.dbg
 *.ppu
@@ -30,8 +28,6 @@
 *.rst
 *.rsj
 *.lrt
-*.lpi
-*.lpr
 *.lps
 *.bak
 

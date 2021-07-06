@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="Code Building"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0"/>
+    </RunParams>
+    <RequiredPackages Count="4">
+      <Item1>
+        <PackageName Value="FCL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="zcomponent"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="MemDSLaz"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+    </RequiredPackages>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="codebuilding.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="view\uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="typecodebuilding.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TypeCodeBuilding"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="udm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="class\codebuildingclass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CodeBuildingClass"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="class\criptografiacodebuilding.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CriptografiaCodeBuilding"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="class\conexaocodebuilding.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ConexaoCodeBuilding"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="controller\sgdb_ctrl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SGDB_Ctrl"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="controller\postgres_ctrl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PostGres_Ctrl"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="controller\firebird_ctrl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Firebird_Ctrl"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="controller\mysql_ctrl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MySql_Ctrl"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="class\tablecodebuilding.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TableCodeBuilding"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="view\useleciona_banco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSeleciona_Banco"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="controller\nodejs_ctrl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NodeJS_Ctrl"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="controller\sequelize_ctrl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Sequelize_Ctrl"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="funcoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Funcoes"/>
+      </Unit15>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="C:\CodeBuilding\CodeBuilding"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="view;class;controller"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
