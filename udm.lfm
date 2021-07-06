@@ -1,0 +1,183 @@
+object dm: Tdm
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 362
+  HorizontalOffset = 256
+  VerticalOffset = 145
+  Width = 438
+  PPI = 96
+  object Tabelas: TMemDataset
+    FieldDefs = <    
+      item
+        Name = 'check'
+        DataType = ftBoolean
+      end    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Size = 200
+      end>
+    AfterScroll = TabelasAfterScroll
+    left = 76
+    top = 60
+  end
+  object Fields: TMemDataset
+    FieldDefs = <    
+      item
+        Name = 'campo'
+        DataType = ftString
+        Size = 200
+      end    
+      item
+        Name = 'campo_tamanho'
+        DataType = ftInteger
+      end    
+      item
+        Name = 'tipo'
+        DataType = ftString
+        Size = 20
+      end    
+      item
+        Name = 'chave'
+        DataType = ftString
+        Size = 200
+      end    
+      item
+        Name = 'pk'
+        DataType = ftBoolean
+      end    
+      item
+        Name = 'notnull'
+        DataType = ftBoolean
+      end    
+      item
+        Name = 'unique'
+        DataType = ftBoolean
+      end>
+    left = 164
+    top = 60
+  end
+  object Banco: TMemDataset
+    FieldDefs = <    
+      item
+        Name = 'nome'
+        DataType = ftString
+        Size = 200
+      end>
+    left = 244
+    top = 60
+  end
+  object qryScript: TZSQLProcessor
+    Params = <>
+    DelimiterType = dtSetTerm
+    Delimiter = ';'
+    left = 252
+    top = 132
+  end
+  object ForeignKeys: TMemDataset
+    FieldDefs = <    
+      item
+        Name = 'fk_name'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'field'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'fk_table'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'fk_field'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'update'
+        DataType = ftString
+        Size = 20
+      end    
+      item
+        Name = 'delete'
+        DataType = ftString
+        Size = 20
+      end>
+    left = 76
+    top = 132
+  end
+  object Dependencias: TMemDataset
+    FieldDefs = <    
+      item
+        Name = 'tabela'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'field'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'constraint'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'field_ref'
+        DataType = ftString
+        Size = 50
+      end>
+    left = 76
+    top = 204
+  end
+  object Zqry: TZQuery
+    Params = <>
+    Options = [doCalcDefaults, doSmartOpen]
+    left = 260
+    top = 204
+  end
+  object Dados: TMemDataset
+    FieldDefs = <>
+    left = 316
+    top = 64
+  end
+  object Unique: TMemDataset
+    FieldDefs = <    
+      item
+        Name = 'fk_name'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'field'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'fk_table'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'fk_field'
+        DataType = ftString
+        Size = 50
+      end    
+      item
+        Name = 'update'
+        DataType = ftString
+        Size = 20
+      end    
+      item
+        Name = 'delete'
+        DataType = ftString
+        Size = 20
+      end>
+    left = 164
+    top = 132
+  end
+end

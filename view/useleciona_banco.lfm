@@ -1,0 +1,62 @@
+object FSeleciona_Banco: TFSeleciona_Banco
+  Left = 401
+  Height = 90
+  Top = 250
+  Width = 422
+  BorderStyle = bsDialog
+  Caption = 'Selecione o Banco de Dados'
+  ClientHeight = 90
+  ClientWidth = 422
+  KeyPreview = True
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.4.0'
+  object btSalvar: TBitBtn
+    Left = 242
+    Height = 27
+    Top = 54
+    Width = 82
+    Anchors = [akRight, akBottom]
+    Caption = 'Salvar'
+    OnClick = btSalvarClick
+    TabOrder = 0
+  end
+  object btCancelar: TBitBtn
+    Left = 329
+    Height = 27
+    Top = 54
+    Width = 82
+    Anchors = [akRight, akBottom]
+    Caption = 'Cancelar'
+    OnClick = btCancelarClick
+    TabOrder = 1
+  end
+  object cbBanco: TComboBox
+    Left = 16
+    Height = 23
+    Top = 16
+    Width = 394
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 2
+    Visible = False
+  end
+  object btBuscaFirebird: TButton
+    Left = 380
+    Height = 25
+    Top = 15
+    Width = 31
+    OnClick = btBuscaFirebirdClick
+    TabOrder = 3
+    Visible = False
+  end
+  object edFirebird: TEdit
+    Left = 16
+    Height = 23
+    Top = 16
+    Width = 360
+    AutoSize = False
+    TabOrder = 4
+    Visible = False
+  end
+end
